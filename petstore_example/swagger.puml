@@ -2,7 +2,7 @@
 hide empty members
 set namespaceSeparator none
 
-class "/pet" {
+interface "/pet" {
 }
 
 class "POST /pet" {
@@ -30,7 +30,7 @@ class "PUT /pet" {
 
 
 
-class "/pet/findByStatus" {
+interface "/pet/findByStatus" {
 }
 
 class "GET /pet/findByStatus" {
@@ -47,7 +47,7 @@ class "GET /pet/findByStatus" {
 
 
 
-class "/pet/findByTags" {
+interface "/pet/findByTags" {
 }
 
 class "GET /pet/findByTags" {
@@ -64,7 +64,7 @@ class "GET /pet/findByTags" {
 
 
 
-class "/pet/{petId}" {
+interface "/pet/{petId}" {
 }
 
 class "GET /pet/{petId}" {
@@ -108,7 +108,7 @@ class "DELETE /pet/{petId}" {
 
 
 
-class "/pet/{petId}/uploadImage" {
+interface "/pet/{petId}/uploadImage" {
 }
 
 class "POST /pet/{petId}/uploadImage" {
@@ -127,7 +127,7 @@ class "POST /pet/{petId}/uploadImage" {
 
 
 
-class "/store/inventory" {
+interface "/store/inventory" {
 }
 
 class "GET /store/inventory" {
@@ -142,7 +142,7 @@ class "GET /store/inventory" {
 
 
 
-class "/store/order" {
+interface "/store/order" {
 }
 
 class "POST /store/order" {
@@ -159,7 +159,7 @@ class "POST /store/order" {
 
 
 
-class "/store/order/{orderId}" {
+interface "/store/order/{orderId}" {
 }
 
 class "GET /store/order/{orderId}" {
@@ -188,7 +188,7 @@ class "DELETE /store/order/{orderId}" {
 
 
 
-class "/user" {
+interface "/user" {
 }
 
 class "POST /user" {
@@ -204,7 +204,7 @@ default: {field} <i>not specified</i>
 
 
 
-class "/user/createWithArray" {
+interface "/user/createWithArray" {
 }
 
 class "POST /user/createWithArray" {
@@ -220,7 +220,7 @@ default: {field} <i>not specified</i>
 
 
 
-class "/user/createWithList" {
+interface "/user/createWithList" {
 }
 
 class "POST /user/createWithList" {
@@ -236,7 +236,7 @@ default: {field} <i>not specified</i>
 
 
 
-class "/user/login" {
+interface "/user/login" {
 }
 
 class "GET /user/login" {
@@ -254,7 +254,7 @@ class "GET /user/login" {
 
 
 
-class "/user/logout" {
+interface "/user/logout" {
 }
 
 class "GET /user/logout" {
@@ -269,7 +269,7 @@ default: {field} <i>not specified</i>
 
 
 
-class "/user/{username}" {
+interface "/user/{username}" {
 }
 
 class "GET /user/{username}" {
