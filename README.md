@@ -1,6 +1,7 @@
 # Swagger to UML
 
-A small pure Python script that converts [OpenAPI specifications](https://www.openapis.org) (a.k.a. [Swagger](https://swagger.io)) into [Plant UML](http://plantuml.com) diagrams. The goal is not to replace existing documentation generators, but to complement them with a visual representation of the routes, models, and their relationships.
+A small pure Python script that converts [OpenAPI specifications](https://www.openapis.org) (a.k.a. [Swagger](https://swagger.io)) into [Plant UML](http://plantuml.com) diagrams. 
+The goal is not to replace existing documentation generators, but to complement them with a visual representation of the routes, models, and their relationships.
 
 ## Example
 
@@ -9,7 +10,7 @@ A small pure Python script that converts [OpenAPI specifications](https://www.op
 To create a diagram from the [petstore example](http://petstore.swagger.io), call the script with:
 
 ```
-python swagger_to_uml.py petstore_example/swagger.json >petstore_example/swagger.puml
+python3 bin/swagger_to_uml petstore_example/swagger.json >petstore_example/swagger.puml
 ```
 
 It will create the file `petstore_example/swagger.puml` which can then be translated into a PNG image with PlantUML with:
@@ -22,7 +23,8 @@ Note you need to install [Plant UML](http://plantuml.com) and [Graphviz](http://
 
 ## Installation
 
-The script runs with Python 3 without any additional packages. Transforming PUML into vector graphics or other requires external tools however.
+The script runs with Python 3 without any additional packages. 
+Transforming PUML into vector graphics or other requires external tools however.
 
 On macOS, the installation of the required tools with [Homebrew](https://brew.sh) is simple:
 
